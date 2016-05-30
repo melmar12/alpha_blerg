@@ -5,6 +5,11 @@ Rails.application.routes.draw do
   root 'home#index'
 
   resources :articles
+
+  get 'signup', to: 'users#new'
+  # post 'users', to: 'users#create'
+  resources :users, :except => [:new]
+
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
