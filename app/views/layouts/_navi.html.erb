@@ -1,10 +1,18 @@
 <p>
 
 	Hi, I am Nav Bar 
+	| <%= link_to 'Articles', articles_path %>
+	| <%= link_to 'Users', users_path %>
+
 
 	<% if logged_in? %>
 
 	| <%= link_to 'Logout', logout_path, method: :delete %>
+
+	| <%= link_to 'Edit Profile', edit_user_path(current_user) %>
+	| <%= link_to 'Profile Page', user_path(current_user) %>
+	| <%= link_to 'New Article', new_article_path %>
+
 
 	<% else %>
 
