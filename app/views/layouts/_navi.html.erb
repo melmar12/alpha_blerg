@@ -11,6 +11,7 @@
 
 	| <%= link_to 'Edit Profile', edit_user_path(current_user) %>
 	| <%= link_to 'Profile Page', user_path(current_user) %>
+	<%= "(Admin)" if current_user.admin? %>
 	| <%= link_to 'New Article', new_article_path %>
 
 
