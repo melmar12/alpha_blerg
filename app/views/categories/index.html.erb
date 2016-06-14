@@ -1,0 +1,11 @@
+<h1>Listing all Categories</h1>
+
+<%= will_paginate %>
+<% @categories.each do |category| %>
+
+	<ul>
+		<li><%= link_to "#{category.name}", category_path(category) %></li>
+	</ul>
+
+<% end %>
+<%= will_paginate %>
