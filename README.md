@@ -4,7 +4,6 @@
 
 
 
-
 **Things to do**
 ..*~~complete course~~
 ..* play with styling
