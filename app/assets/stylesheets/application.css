@@ -16,8 +16,16 @@
 
 /* convert to scss later*/
 
-/* NAV */
+/* THEME */
 * {margin: 0px;}
+/*pagination*/
+div .pagination {float: right}
+.pagination ul {float: right}
+.pagination ul li {display: inline-block}
+
+
+
+/* NAV */
 nav {
 	width: 100%;
 	padding-bottom: 20px;
@@ -30,10 +38,8 @@ nav {
 	color: white;
 	background-color: black;
 }
-nav ul {
-	list-style: none;
-}
- nav p, nav div {
+nav ul {list-style: none}
+nav p, nav div {
  	display: inline-block;
  	/*border: 1px solid magenta;*/
  	padding: 20px
@@ -42,4 +48,29 @@ nav ul {
  	color: white;
  	text-decoration: none;
  }
- nav a:hover {color: orange;}
+ nav a:hover {color: orange}
+
+/* APPLICATION.html.erb */
+.container {
+	width: 100%;
+	padding-bottom: 100px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+.container-helper {width: 800px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

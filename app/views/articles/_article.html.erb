@@ -1,6 +1,8 @@
+<% if logged_in? %>
 <p>
 	<%= link_to 'Creat New Article', new_article_path %> 
 </p>
+<% end %>
 
 <table>
 	<th>Title</th>

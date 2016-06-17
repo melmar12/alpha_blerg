@@ -10,11 +10,12 @@
 
 	<%= render 'layouts/navi' %>
 
-	<%= render 'layouts/messages' %>
-
-	<%= yield %>
-
-	<%= debug(params) if Rails.env.development? %>
-
+	<div class="container">
+		<div class="container-helper">
+			<%= render 'layouts/messages' %>
+			<%= yield %>
+			<%= debug(params) if Rails.env.development? %>
+		</div>
+	</div>
 </body>
 </html>
