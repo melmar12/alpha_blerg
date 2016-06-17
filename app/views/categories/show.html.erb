@@ -1,5 +1,9 @@
 <h1><%= "Category: " + @category.name %></h1>
 
+<% if logged_in? && current_user.admin? %>
+<%= link_to "Edit Category Name", edit_category_path(@category) %>
+<% end %>
+
 <p><%= will_paginate @category_articles %></p>
 
 <%=  render 'articles/article', obj: @category_articles %>

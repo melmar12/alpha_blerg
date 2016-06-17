@@ -2,13 +2,4 @@
 
 
 
-<%= form_for @category do |f| %>
-<p>
-	<%= f.label :name %><br/>
-	<%= f.text_field :name, placeholder: 'food' %>
-</p>
-
-<p>
-	<%= f.submit %>
-</p>
-<% end %>
+<%= render 'form' %>
