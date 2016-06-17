@@ -8,6 +8,13 @@
 	Description: <%= @article.description.html_safe %>
 </p>
 
+
+<% if @article.categories.any? %>
+	<p> Categories: <%= render @article.categories %></p>
+<% end %>
+
+
+
 <% if @article.user %>
 	<h4>The Author</h4>
 		<ul>
