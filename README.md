@@ -8,7 +8,3 @@ start app locally with `bundle install --without production` then `rake db:migra
 
 then view on browser `rails s`
 
-**Things to do**
-* ~~complete course~~
-* play with styling
-* practice writing more tests
