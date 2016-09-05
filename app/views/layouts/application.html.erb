@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>AlphaBlerg</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -10,12 +11,17 @@
 
 	<%= render 'layouts/navi' %>
 
-	<div class="container">
-		<div class="container-helper">
-			<%= render 'layouts/messages' %>
-			<%= yield %>
-			<%= debug(params) if Rails.env.development? %>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<%= render 'layouts/messages' %>
+				<%= yield %>
+				<%= debug(params) if Rails.env.development? %>
+			</div>
+			<div class="col-md-2"></div>
 		</div>
 	</div>
+	
 </body>
 </html>
